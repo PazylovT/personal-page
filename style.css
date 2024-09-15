@@ -1,0 +1,25 @@
+body {
+    font-family: Arial;
+}
+#header {
+    background-color: dimgray;
+    border-bottom: .5rem solid lightseagreen;
+}
+#title {
+    text-align: center;
+}
+* {
+    margin: 0;
+}
+#about {
+    display: flex;
+}
+h3 {
+    color: rgb(29, 103, 99);
+    width: 10rem;
+    margin: 0 auto;
+}
+#fav {
+    display: flex;
+    justify-content: space-between;
+}
