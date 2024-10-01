@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    }
+    body {
+    background: url("https://cdn.imgchest.com/files/w7pjcw6e27p.png");
+    opacity: .5;
+    background-repeat: no-repeat;
+    }
+    .container {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    }
+    .container > * {
+    background-color: lightblue;
+    font-size: 10rem;
+    color: blue;
+    border: 1px dashed blue;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 199px;
+    }
+
+    .box2, .box3 {
+        flex-basis: 230px; 
+    }
+
+    .box4 {
+        flex-basis: 100%;
+    }
+
+    .box5 {
+        flex-basis: 840px;
+    }
+
+    .box6 {
+        flex-basis: 240px;
+    }
