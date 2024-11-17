@@ -6,6 +6,7 @@
 img:nth-of-type(1) {
     display: none;
 }
+ 
 body {
     background-image: url(https://cdn.imgchest.com/files/my8xckdzm4l.png);
     background-repeat: no-repeat;
@@ -22,6 +23,7 @@ body {
 }
 .box1 {
     grid-area: one;
+    justify-content: flex-start;  
 }
 .box2 {
     grid-area: two;
@@ -37,7 +39,6 @@ body {
 }
 .box6 {
     grid-area: six;
-    justify-content: flex-start;  
     gap: 5px; 
     flex-wrap: wrap; 
     background-color: #f4bb00;
@@ -50,9 +51,9 @@ body {
 }
 .box9 {
     grid-area: nine;
-  }
+}
 
-/*Text of the Toolbar*/
+/*Header*/
 .header {
     font-family: 'Roboto', sans-serif;
     font-size: 22px; 
@@ -66,17 +67,6 @@ body {
     padding-top: 52px;
     padding-right: 25px;
 } 
-ul {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px; 
-    font-weight: lighter;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; 
-    color: white;
-    padding-top: 5px;
-}
 
 /*Language Switch Buttons*/
 .lang-switch {
@@ -101,7 +91,27 @@ ul {
     margin-top: 4px;
 }
 
-/*Menu Items*/
+/*Menu*/
+ul {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px; 
+    font-weight: lighter;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    flex-direction: column;
+}
+
+li {
+    text-transform: uppercase;
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+/* Menu Items
 .main {
     flex-basis: 92px;
     padding-left: 15px;
@@ -117,9 +127,9 @@ ul {
 }
 .entrance {
     flex-basis: 120px;
-}
+} */
 
-/*Tiny Points Between Menu Items*/
+/* Tiny Points Between Menu Items
 ul li::after {
     content: "•";      
     color: #f5bd02;  
@@ -128,7 +138,7 @@ ul li::after {
 }
 ul li:last-child::after {
     content: "";
-}
+} */
 
 /*Responsive Design*/
 .container {
@@ -137,8 +147,8 @@ ul li:last-child::after {
     grid-template-rows: minmax(80px, auto) minmax(55px, auto) minmax(270px, auto) minmax(127px, auto) minmax(327px, auto) minmax(167px, auto);
     grid-template-areas: 
     "one nine nine nine"
-    "one six six six"
-    "two two two two"
+    "one nine nine nine"
+    "six six two two"
     "three three three three"
     "four four seven eight"
     "five five five five";
@@ -154,7 +164,6 @@ ul li:last-child::after {
         "five"
         "six"
         "seven"
-        "eight"
-        "nine";
+        "eight";
     }
 }
