@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10</title>
+    <link rel="stylesheet" href="grid2b.css" class="style">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+    <img src='https://cdn.imgchest.com/files/6yxkcg9dp7w.png' style='position: absolute; top:0; left:0;z-index:-1'>
+    <div class="container">
+
+        <div class="box1">
+            <img src="https://i.postimg.cc/MTTw1Tnx/logo-removebg-preview.png" alt="Court">
+        </div>
+
+        <div class="box2">
+            <div class="header">
+                <p>Судебные акты и заседания</p>
+                <div class="lang-switch">
+                    <button class="lang-russ">Рус</button> 
+                    <a href="#" class="lang-kir">Кыр</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box3"></div>
+
+        <div class="box4">
+            <ul>
+                <li class="main">Главная</li>
+                <li class="news">Новости</li>
+                <li class="court">Постановления Пленума Верховного cуда КР</li>
+                <li class="certificate">Справка</li>
+                <li class="entrance">Служебный вход</li>
+            </ul>
+        </div>
+
+        <div class="box5">
+            <div class="box">
+                <div class="caption">'Justice for Every Citizen and Each Individual'</div>
+            </div>
+        </div>
+
+        <div class="box6">
+            <div class="NEWS">
+                <p>НОВОСТИ</p>
+            </div>
+                <div class="news-item">
+                <div class="news-date">05.11.18</div>
+                <div class="news-title">Статистика публикаций за ( 01.01.2018 - 31.10.2018)</div>
+            </div>
+            <div class="news-item2">
+                <div class="news-date">25.10.17</div>
+                <div class="news-titleX">В Узбекистане проходит совещание председателей Верховных судов стран- участниц ШОС</div>
+            </div>
+            <div class="news-item3">
+                <div class="news-date">21.10.17</div>
+                <div class="news-title">Впервые в истории независимого Кыргызстана сотрудники судебной системы получат квартиры</div>
+            </div>
+            <div class="news-item4">
+                <div class="news-date">15.10.17</div>
+                <div class="news-titleY">Айнaш Токбаева Председатель Верховного суда Кыргызской Республики: «Голосование - гражданский долг человека»</div>
+            </div>
+        </div>
+
+        <div class="box7">
+            <div class="SiteTimeline">
+                <p>ВРЕМЯ РАБОТЫ САЙТА</p>
+            </div>
+            <div class="item1">
+                <div class="number1">9</div>
+                <div class="text1">лет</div>
+            </div>
+            <div class="item2">
+                <div class="number2">11</div>
+                <div class="text2">месяцев</div>
+            </div>
+        </div>
+
+        <div class="box8">
+            <div class="Publishment">
+                <p>ОПУБЛИКОВАНО</p>
+            </div>
+            <div class="item">
+                <div class="number">357929</div>
+                <div class="text">дел</div>
+            </div>
+            <div class="item">
+                <div class="number">334297</div>
+                <div class="text">актов</div>
+            </div>
+            <div class="item">
+                <div class="number">565383</div>
+                <div class="text">заседаний</div>
+            </div>
+        </div>
+
+        <div class="box9"></div>
+        <div class="box10"></div>
+    </div>
+
+    <script>
+        function switchStyle() {
+            let style = document.querySelector('.style');
+            if (style.getAttribute('href') == 'grid4.css') {
+                style.setAttribute('href', 'grid2b.css');
+            } else {
+                style.setAttribute('href', 'grid4.css');
+            }
+        }
+    </script>
+
+</body>
+</html>
