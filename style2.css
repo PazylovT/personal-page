@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+/* img:nth-of-type(1) {
+    display: none;
+} */
+
+body > img:nth-of-type(1) {
+    display: none;
+}
+
+body {
+    background-image: url(https://cdn.imgchest.com/files/my8xckdzm4l.png);
+    background-repeat: no-repeat;
+    max-width: 1143px;
+    min-height: 1583px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+    background-image: none;
+    opacity: 1;
+}
+/* .container > * {
+    border: 2px dashed blue;
+} */
+.box1 {
+    grid-area: logo;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box1 img {
+    max-width: 100px; 
+    height: 97px;
+    padding-left: 8px;
+    padding-top: 21px;
+}
+
+.box2 {
+    grid-area: header;
+}
+.box3 {
+    grid-area: PersonCase;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box4 {
+    grid-area: vMenu;
+    gap: 5px; 
+    flex-wrap: wrap; 
+    background-color: #f4bb00;
+    border-radius: 10px; 
+    overflow: hidden;
+    margin-left: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box5 {
+    grid-area: hero;
+}
+.box {
+    height: 270px;
+    background-image: url(https://global.ariseplay.com/amg/www.thisdaylive.com/uploads/court-1.jpg);
+    /* color:#f4bb00; */
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-blend-mode: multiply;
+    background-color: grey; 
+
+    border: none;
+    border-radius: 10px; 
+    margin-left: 11px;
+    margin-right: 11px;
+}
+
+.box6 {
+    grid-area: news;
+}
+.box7 {
+    grid-area: siteWork;
+}
+.box8 {
+    grid-area: publish;
+}
+
+/*Header*/
+.header {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #404040;;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 52px;
+    padding-right: 25px;
+} 
+
+/*Language Switch Buttons*/
+.lang-switch {
+    display: flex;
+    justify-content: flex-end;
+    gap: 9px; 
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+}
+.lang-switch .lang-russ {
+    font-size: 20px;
+    background-color: #f4bb00; 
+    color:#fffaee; 
+    border: none;
+    border-radius: 4px; 
+    height: 29px;
+}
+.lang-switch .lang-kir {
+    font-size: 20px;
+    color: #6a6a6a;
+    text-decoration: none;
+}
+
+/*Menu*/
+ul {
+    font-family: 'Pacifico', cursive;
+    font-size: 14px; 
+    font-weight: lighter;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    flex-direction: column;
+}
+
+li {
+    text-transform: uppercase;
+    padding-left: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid white;
+    transition: background-color 0.3s ease; 
+}
+li:last-child {
+    border-bottom: none; 
+}
+li:hover {
+    background-color: #d99f00; 
+    cursor: pointer; 
+}
+
+/*Two Items Table*/
+.sitting, .search {
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+}
+
+.biggerP, .biggerC {
+    /* display: flex; */
+    align-items: center; 
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin-top: 14px;
+    margin-bottom: 12px;
+    margin-left: 21px;
+    flex: 1; 
+}
+.box3 img {
+    max-width: 100%; 
+    height: 170px;
+}
+.box3 h1 {
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+    background-color: #f4bb00;
+    color: white;
+    margin: 0;
+    padding: 7px;
+}
+.box3 p {
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    font-size: 16px;
+    color: #a2a6a7;
+    line-height: 1.5;
+    word-spacing: 0,2px;
+    letter-spacing: -0.10px;
+}
+.biggerP {
+    gap: 25px; 
+    text-align: center;
+}
+.biggerP h1 {
+    margin-top: 18px;
+}
+
+.biggerC {
+    margin-right: 13px;
+    gap: 18px; 
+    text-align: center;
+}
+.biggerC h1 {
+    margin-top: 20px;
+}
+
+/*Repeating Items*/
+.NEWS, .SiteTimeline, .Publishment {
+    font-family: 'Pacifico', cursive;
+    font-size: 16px; 
+    font-weight: normal;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: #6a6a6a;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 2px;
+    margin-top: 7px;
+}
+
+.NEWS {
+    padding-left: 20px;
+    padding-top: 6px;
+}
+
+.news-item {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: start;
+    font-size: 14px;
+    background-color: white;
+
+    margin-left: 32px;
+    margin-top: 20px;
+}
+
+.news-item2 {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: start;
+    font-size: 14px;
+    background-color: #f4bb00;
+
+    padding-top: 6px;
+    padding-bottom: 7px;
+    padding-left: 11px;
+
+    margin-right: 13px; 
+    margin-left: 20px; 
+    margin-top: 9px; 
+}
+
+.news-item3 {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: start;
+    font-size: 14px;
+    background-color: white; 
+
+    margin-left: 32px;
+    margin-top: 9px;
+    padding-right: 15px;
+}
+
+.news-item4 {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: start;
+    font-size: 14px;
+    background-color: #f4bb00; 
+
+    padding-top: 6px;
+    padding-bottom: 7px;
+    padding-left: 12px;
+
+    margin-right: 13px; 
+    margin-left: 20px; 
+    margin-top: 8px; 
+}
+
+.news-date {
+    color: #a2a6a7;
+    padding-top: 2px;
+    margin-right: 16px;
+}
+
+.news-title {
+    color: #494949;
+    line-height: 1.5;
+    word-spacing: 0.2px;
+    letter-spacing: -0.15px;
+}
+
+.news-titleX {
+    color: #494949;
+    line-height: 1.45;
+    letter-spacing: -0.1px;
+} 
+
+.news-titleY {
+    color: #494949;
+    line-height: 1.45;
+    word-spacing: 0.2px;
+    letter-spacing: -0.10px;
+}
+
+.SiteTimeline {
+    padding-left: 13px;
+    padding-top: 4px;
+}
+
+.item1 {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 13px;
+    padding-top: 14px;
+}
+.number1 {
+    font-size: 16px;
+    background-color: #f4bb00;
+    color: white;
+    padding: 15px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 4px;
+    margin-right: 14px;
+}
+.text1 {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #494949;
+}
+
+.item2 {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 12px;
+    padding-top: 11px;
+}
+.number2 {
+    font-size: 16px;
+    background-color: #f4bb00;
+    color: white;
+    padding: 12px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 4px;
+    margin-right: 11px; 
+}
+.text2 {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #494949;
+}
+
+.Publishment {
+    padding-left: 31px;
+    padding-top: 4px;
+}
+
+.item {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 32px;
+    padding-top: 15px;
+}
+.number {
+    font-size: 16px;
+    background-color: #f4bb00;
+    color: white;
+    padding: 8px;
+    padding-top: 10px;
+    border-radius: 4px;
+    margin-right: 12px; 
+}
+.text {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #494949;
+}
+
+/*Responsive Design*/
+.container {
+    display: grid;
+    grid-template-columns: minmax(20px, 90px) minmax(20px, 130px) minmax(20px, 272px) minmax(20px, 223px) minmax(20px, 268px);
+    grid-template-rows: minmax(80px, auto) minmax(53px, auto) minmax(270px, auto) minmax(123px, auto) minmax(329px, auto);
+    grid-template-areas: 
+    "logo header header header header"
+    "logo header header header header"
+    "vMenu vMenu hero hero hero"
+    "siteWork siteWork news news news"
+    "publish publish PersonCase PersonCase PersonCase"
+}
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "logo"
+        "header"
+        "hero"
+        "news"
+        "siteWork"
+        "publish"
+        "PersonCase"
+    }
+}
