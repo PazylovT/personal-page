@@ -63,6 +63,11 @@ body {
     
     background-blend-mode: multiply;
     background-color: grey; 
+
+    border: none;
+    border-radius: 10px; 
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
 .box6 {
