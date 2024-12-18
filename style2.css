@@ -397,6 +397,40 @@ li:hover {
     color: #494949;
 }
 
+/*Hamburger Icon*/
+.hamburger {
+    font-size: 40px;
+    background: none;
+    border: none;
+    color: #f4bb00;
+    cursor: pointer;
+    position: absolute;
+    top: 7px; /* Below the style */
+    right: 0;
+    display: none; /* Hidden by default */
+}
+
+.menu {
+    display: none; /* Default: menu is hidden */
+    color: white;
+    background-color: #f4bb00;
+    position: absolute;
+    top: 50px; /* Below the hamburger */
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu.show {
+    display: flex;
+}
+
+@media (max-width: 500px) {
+    .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+}
+
 /*Responsive Design*/
 .container {
     display: grid;

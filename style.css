@@ -397,6 +397,14 @@ ul li:last-child::after {
     color: #494949;
 }
 
+/* Hamburger Icon*/
+.hamburger {
+    display: none; 
+}
+.menu {
+    display: none; 
+}
+
 /*Responsive Design*/
 .container {
     display: grid;
