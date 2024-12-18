@@ -1,43 +1,425 @@
-body {
-    font-family: Helvetica;
-}
-#header {
-    background-color: dimgray;
-    height: 3.5rem;
-    border-bottom: 0.5rem solid lightSeaGreen;
-}
-
-h1 {
-    font-size: 1.5rem;
-    color: white;
-}
-
-#title {
-    height: 25.5rem;
-    background-color: lightgray;
-    text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 * {
     margin: 0;
+    box-sizing: border-box;
+}
+body > img:nth-of-type(1) {
+    display: none;
 }
 
-#about {
+body {
+    background-image: url(https://cdn.imgchest.com/files/my8xckdzm4l.png);
+    background-repeat: no-repeat;
+    max-width: 1143px;
+    min-height: 1583px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+    background-image: none;
+    opacity: 1;
+}
+/* .container > * {
+    border: 2px dashed white;
+} */
+.box1 {
+    grid-area: one;
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.box1 img {
+    max-width: 100px; 
+    height: 97px;
+    padding-left: 9px;
+    padding-top: 21px;
 }
 
-#about img {
-    height: 18rem;
+.box2 {
+    grid-area: two;
 }
 
-h3 {
-    color: LightSeaGreen;
-    width: 17rem;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 0.5rem;
-}
-
-#fav {
+.box3 {
+    grid-area: three;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box4 {
+    grid-area: four;
+    justify-content: flex-start;  
+    gap: 5px; 
+    flex-wrap: wrap; 
+    /* background-color: #f4bb00; */
+}
+.box5 {
+    grid-area: five;
+}
+.box {
+    height: 270px;
+    background-image: url(https://global.ariseplay.com/amg/www.thisdaylive.com/uploads/court-1.jpg);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-blend-mode: multiply;
+    background-color: grey; 
+
+    border: none;
+    border-radius: 10px; 
+    margin-left: 21px;
+    margin-right: 21px;
+}
+
+.box6 {
+    grid-area: six;
+}
+.box7 {
+    grid-area: seven;
+}
+.box8 {
+    grid-area: eight;
+}
+
+/*Text of the Toolbar*/
+.header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px; 
+    font-weight: normal;
+    color: #404040;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 16px;
+    padding-top: 54px; /* This is the only case, I'm sorry */
+    padding-right: 27px;
+} 
+ul {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px; 
+    font-weight: lighter;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    /* color: white; */
+    color: #9c9e9f;
+    padding-top: 7px;
+    padding-left: 2px;
+    background-color: white;
+}
+
+/*Language Switch Buttons*/
+.lang-switch {
+    display: flex;
+    justify-content: flex-end;
+    gap: 9px; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+.lang-switch .lang-russ {
+    font-size: 14px;
+    background-color: #f4bb00; 
+    color:#fffaee; 
+    border: none;
+    border-radius: 4px; 
+    height: 23px;
+}
+.lang-switch .lang-kir {
+    font-size: 14px;
+    color: #6a6a6a;
+    text-decoration: none;
+    margin-top: 4px;
+}
+
+/*Menu Items*/
+.main {
+    flex-basis: 92px;
+    padding-left: 15px;
+}
+.news {
+    flex-basis: 79px;
+}
+.court {
+    flex-basis: 321px;
+}
+.certificate {
+    flex-basis: 80px;
+}
+.entrance {
+    flex-basis: 120px;
+}
+
+/*Tiny Points Between Menu Items*/
+ul li::after {
+    content: "•";      
+    color: #f5bd02;  
+    font-size: 10px; 
+    padding-left: 10px;     
+}
+ul li:last-child::after {
+    content: "";
+}
+
+/*Two Items Table*/
+.sitting, .search {
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+}
+
+.biggerP, .biggerC {
+    display: flex;
+    align-items: center; 
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin-top: 14px;
+    margin-bottom: 12px;
+    margin-left: 21px;
+    flex: 1; 
+}
+.box3 img {
+    max-width: 100px; 
+    height: 56px;
+    margin-left: 25px;
+}
+.box3 h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: #404040;
+    margin: 0;
+}
+.box3 p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #a2a6a7;
+    line-height: 1.5;
+    word-spacing: 0,2px;
+    letter-spacing: -0.10px;
+}
+.biggerP{
+    gap: 25px; 
+}
+
+.biggerC {
+    margin-right: 22px;
+    gap: 18px; 
+}
+.biggerC h1 {
+    margin-top: 20px;
+}
+.biggerC img {
+    margin-left: 18px;
+}
+
+/*Repeating Items*/
+.NEWS, .SiteTimeline, .Publishment {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; 
+    font-weight: normal;
+    color: #6a6a6a;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 2px;
+    margin-top: 7px;
+}
+
+.NEWS {
+    padding-left: 20px;
+    padding-top: 6px;
+}
+
+.news-item {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: start;
+    font-size: 14px;
+    background-color: white;
+
+    margin-left: 32px;
+    margin-top: 20px;
+}
+
+.news-item2 {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: start;
+    font-size: 14px;
+    background-color: #e2ebec; 
+
+    padding-top: 6px;
+    padding-bottom: 7px;
+    padding-left: 11px;
+
+    margin-right: 13px; 
+    margin-left: 20px; 
+    margin-top: 9px; 
+}
+
+.news-item3 {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: start;
+    font-size: 14px;
+    background-color: white; 
+
+    margin-left: 32px;
+    margin-top: 9px;
+    padding-right: 15px;
+}
+
+.news-item4 {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: start;
+    font-size: 14px;
+    background-color: #e2ebec; 
+
+    padding-top: 6px;
+    padding-bottom: 7px;
+    padding-left: 12px;
+
+    margin-right: 13px; 
+    margin-left: 20px; 
+    margin-top: 8px; 
+}
+
+.news-date {
+    color: #a2a6a7;
+    padding-top: 2px;
+    margin-right: 16px;
+}
+
+.news-title {
+    color: #494949;
+    line-height: 1.5;
+    word-spacing: 0.2px;
+    letter-spacing: -0.15px;
+}
+
+.news-titleX {
+    color: #494949;
+    line-height: 1.45;
+    letter-spacing: -0.1px;
+} 
+
+.news-titleY {
+    color: #494949;
+    line-height: 1.45;
+    word-spacing: 0.2px;
+    letter-spacing: -0.10px;
+}
+
+.SiteTimeline {
+    padding-left: 13px;
+    padding-top: 4px;
+}
+
+.item1 {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 13px;
+    padding-top: 14px;
+}
+.number1 {
+    font-size: 16px;
+    background-color: #e2ebec;  
+    color: #a2a6a7;
+    padding: 15px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 4px;
+    margin-right: 14px;
+}
+.text1 {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #494949;
+}
+
+.item2 {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 12px;
+    padding-top: 11px;
+}
+.number2 {
+    font-size: 16px;
+    background-color: #e2ebec; 
+    color: #a2a6a7;
+    padding: 12px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 4px;
+    margin-right: 11px; 
+}
+.text2 {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #494949;
+}
+
+.Publishment {
+    padding-left: 31px;
+    padding-top: 4px;
+}
+
+.item {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 32px;
+    padding-top: 15px;
+}
+.number {
+    font-size: 16px;
+    background-color: #e2ebec; 
+    color: #a2a6a7;
+    padding: 8px;
+    padding-top: 10px;
+    border-radius: 4px;
+    margin-right: 12px; 
+}
+.text {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #494949;
+}
+
+/*Responsive Design*/
+.container {
+    display: grid;
+    grid-template-columns: minmax(20px, 90px) minmax(20px, 402px) minmax(20px, 224px) minmax(20px, 268px);
+    grid-template-rows: minmax(80px, auto) minmax(55px, auto) minmax(270px, auto) minmax(127px, auto) minmax(327px, auto);
+    grid-template-areas: 
+    "one two two two"
+    "one four four four"
+    "five five five five"
+    "three three three three"
+    "six six seven eight";
+}
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight";
+    }
 }
