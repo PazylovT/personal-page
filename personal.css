@@ -1,0 +1,43 @@
+body {
+    font-family: Helvetica;
+}
+#header {
+    background-color: dimgray;
+    height: 3.5rem;
+    border-bottom: 0.5rem solid lightSeaGreen;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#title {
+    height: 25.5rem;
+    background-color: lightgray;
+    text-align: center;
+}
+* {
+    margin: 0;
+}
+
+#about {
+    display: flex;
+}
+
+#about img {
+    height: 18rem;
+}
+
+h3 {
+    color: LightSeaGreen;
+    width: 17rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+#fav {
+    display: flex;
+    justify-content: space-evenly;
+}
